@@ -64,7 +64,7 @@ word = random.choice(lista)
 while fel < max_fel:
  display = ""
  print(lifeline[x])
- print("Amount of guesses:", gissningar)
+ print("Amount of guesses:", gissningar) # commit amend
  
  for letter in word:
     if letter in gissningar:
