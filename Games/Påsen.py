@@ -11,7 +11,7 @@ while spel:
 
     if svar.lower() == "v":
         os.system("cls")
-        print(f"Här är vad du har i din påse!\n\n{påse}\n\nTryck på valfri tangent för att fortsätta.")
+        print(f"Här är vad du har i din påse!\n\n{påse}\n\n Tryck på valfri tangent för att fortsätta.")
         msvcrt.getch()
         os.system("cls")
     
@@ -30,6 +30,10 @@ while spel:
             print(f"({x}) Hittades i din påse!\n\n Tryck på valfri tangent för att fortsätta.")
             msvcrt.getch()
             os.system("cls")
+        else:
+            print(f"({x}) Kunde inte hittas i din påse!\n\n Tryck på valfri tangent för att fortsätta.")
+            msvcrt.getch()
+            os.system("cls")
 
     elif svar.lower() == "q":
         os.system("cls")
@@ -37,7 +41,11 @@ while spel:
         spel = False
 
     else:
-        print("Enter one of the letters in the brackets instead.")
+        os.system("cls")
+        print("Slå in en av dem givna bokstäverna istället\n\n Tryck på valfri tangent för att fortsätta.")
+        msvcrt.getch()
+        os.system("cls")
+
 
 
         
